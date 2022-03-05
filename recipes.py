@@ -1,5 +1,39 @@
 # by Kami Bigdely
 # Extract Class
+
+class FoodDish:
+    def __init__(self, name, prep_time, is_veggie, food_type, cuisine, ingredients, recipe):
+        self.name = name
+        self.prep_time = prep_time
+        self.is_veggie = is_veggie
+        self.food_type = food_type
+        self.cuisine = cuisine
+        self.ingredients = ingredients
+        self.recipe = recipe
+
+    def get_name(self):
+        print("Name:",self.name)
+
+    def get_prep_time(self):
+        print("Prep time:",self.prep_time, "mins")
+
+    def get_is_veggie(self):
+        print("Is Veggie?", 'Yes' if self.is_veggie else "No")
+
+    def get_food_type(self):
+        print("Food type:",self.food_type)
+    
+    def get_cuisine(self):
+        print("Cuisine:",self.cuisine)
+
+    def get_ingredients(self):
+        print("Ingredients:")
+        for i in self.ingredients:
+            print("\t",i)
+
+    def get_recipe(self):
+        print("Recipe:", self.recipe)
+        
 foods = {'butternut squash soup':[45, True, 'soup','North African',\
      ['butter squash','onion','carrot', 'garlic','butter','black pepper', 'cinnamon','coconut milk']\
         ,'1. Grill the butter squash, onion, carrot and garlic in the oven until'
